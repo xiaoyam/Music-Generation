@@ -1,0 +1,36 @@
+ModuleCmd_Load.c(213):ERROR:105: Unable to locate a modulefile for 'python3'
+THCudaCheck FAIL file=/pytorch/aten/src/THC/THCGeneral.cpp line=50 error=38 : no CUDA-capable device is detected
+{ 'action': 'train',
+  'backprop_pcm': True,
+  'config_folder': 'train',
+  'config_num': 0,
+  'correlation_loss': True,
+  'dataset': 'drum',
+  'decoder': 'transformer',
+  'device': device(type='cuda'),
+  'loss_normalization': 'torch_norm',
+  'model_lr': 0.001,
+  'n_decoder_layers': 4,
+  'n_heads': 2,
+  'n_hidden_units': 100,
+  'n_latents': 100,
+  'n_test_epochs': 4000,
+  'n_train_epochs': 4000,
+  'test_batch_size': 3,
+  'test_latents_Adam_lr': 0.001,
+  'test_latents_init': 'normal',
+  'train_batch_size': 32,
+  'train_latents_Adam_lr': 0.001,
+  'train_latents_init': 'normal'}
+Traceback (most recent call last):
+  File "pytorch/train_model.py", line 445, in <module>
+    main()
+  File "pytorch/train_model.py", line 404, in main
+    data = load_data(args)
+  File "/work/xiaoyam/private/Summer19/Research/Music-Generation/pytorch/utils.py", line 48, in load_data
+    train_spect = torchify(train_spect)
+  File "/work/xiaoyam/private/Summer19/Research/Music-Generation/pytorch/utils.py", line 46, in torchify
+    return torch.tensor(arr, dtype=torch.float, device=args['device'])
+  File "/home/xiaoyam/anaconda3/lib/python3.7/site-packages/torch/cuda/__init__.py", line 179, in _lazy_init
+    torch._C._cuda_init()
+RuntimeError: cuda runtime error (38) : no CUDA-capable device is detected at /pytorch/aten/src/THC/THCGeneral.cpp:50

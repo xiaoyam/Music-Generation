@@ -1,0 +1,1 @@
+slurmstepd: error: execve(): bad interpreter(~/sh): No such file or directory

@@ -1,0 +1,14 @@
+*.swp
+*.pyc
+*.h5
+*.sh
+*.csv
+*.json
+*.pkl
+*.jpg
+*.txt
+
+model_saves/
+results/
+data/
+configs/
