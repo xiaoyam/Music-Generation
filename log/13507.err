@@ -1,0 +1,4 @@
+usage: train_model.py [-h] [--n_train_epochs N_TRAIN_EPOCHS]
+                      [--n_test_epochs N_TEST_EPOCHS]
+                      {train,test} {drum} config_folder config_num
+train_model.py: error: argument action: invalid choice: 'train2' (choose from 'train', 'test')

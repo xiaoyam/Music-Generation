@@ -1,6 +1,7 @@
 import sys
 import math
 import os
+sys.path.append(os.getcwd())
 import argparse
 import time
 import itertools
@@ -49,7 +50,16 @@ def compute_loss(spect_true, spect_pred, pcm_true, pcm_pred, corr, mode, epoch, 
     Returns the mean MSE
     """
     sq_errors= []
-    spect_errors = (spect_pred - spect_true) ** 2
+    w = 5
+    eps = 1
+    C = w - w * math.log(1 + w / eps)
+    x =  torch.abs(spect_true - spect_pred)
+    inner = x[x < w]
+    outer = x[x >= w]
+    inner = w * torch.log(1 + inner / eps)
+    outer = outer - C
+    spect_errors = torch.cat([inner, outer])
+    #spect_errors = (spect_pred - spect_true) ** 2
     sq_errors.append(spect_errors)
     if pcm_pred.size() != (1,1,1):
         pcm_errors = (pcm_true - pcm_pred) ** 2

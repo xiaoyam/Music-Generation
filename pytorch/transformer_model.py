@@ -208,15 +208,24 @@ class Transformer(nn.Module):
         if activa_fn == 'sigmoid':
             self.activation = lambda x: F.sigmoid(x)
         else:
+            #self.activation = None
             self.activation = lambda x: F.softmax(x, dim=-1)
     def forward(self, latents, src_mask=None, trg_mask=None):
         d_output = self.decoder(latents, latents, src_mask, trg_mask)
+        
         results = []
         for lay in self.out:
-            output = lay(d_output)
+            output = lay(d_output)    
             results.append(output)
+        #if self.activation != None:
+        #    output = self.activation(output)
+        results.append(output)
+        #return results
         mask = self.out_mask(d_output)
-        mask_activa = self.activation(mask)
+        if self.activation != None:
+            mask_activa = self.activation(mask)
+        else:
+            mask_activa = mask
         return results, mask_activa
     def freeze_hiddens(self):
         self.decoder.freeze_hiddens()

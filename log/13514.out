@@ -1,0 +1,10 @@
+data/drum/drum fname_start is here !!!
+shapes lol (2005, 174, 258) (18, 174, 258)
+latentsize: 100
+torch.Size([2005, 174, 258])
+torch.Size([18, 174, 258])
+All Done!!!
+data/drum/drum fname_start is here !!!
+shapes lol (2005, 174, 258) (18, 174, 258)
+latentsize: 100
+torch.Size([2005, 174, 258])

@@ -1,0 +1,30 @@
+{ 'action': 'train',
+  'backprop_pcm': True,
+  'config_folder': 'train',
+  'config_num': 109,
+  'correlation_loss': True,
+  'dataset': 'drum',
+  'decoder': 'transformer',
+  'device': device(type='cuda'),
+  'loss_normalization': 'scalar_norm',
+  'model_lr': 0.0001,
+  'n_decoder_layers': 4,
+  'n_heads': 2,
+  'n_hidden_units': 100,
+  'n_latents': 100,
+  'n_test_epochs': 5000,
+  'n_train_epochs': 5000,
+  'test_batch_size': 3,
+  'test_latents_Adam_lr': 0.001,
+  'test_latents_init': 'normal',
+  'train_batch_size': 64,
+  'train_latents_Adam_lr': 0.001,
+  'train_latents_init': 'normal'}
+Traceback (most recent call last):
+  File "pytorch/train_model.py", line 487, in <module>
+    main()
+  File "pytorch/train_model.py", line 451, in main
+    model = create_model(args)
+  File "pytorch/train_model.py", line 331, in create_model
+    mask_activ_fn = args['mask_activation']
+KeyError: 'mask_activation'

@@ -1,0 +1,52 @@
+{ 'action': 'train',
+  'backprop_pcm': False,
+  'config_folder': 'train2',
+  'config_num': 211,
+  'correlation_loss': False,
+  'dataset': 'drum',
+  'decoder': 'transformer',
+  'device': device(type='cuda'),
+  'l1': 'True',
+  'l2': 'False',
+  'loss_normalization': None,
+  'mask_activation': 'sigmoid',
+  'model_lr': 0.001,
+  'n_decoder_layers': 6,
+  'n_heads': 2,
+  'n_hidden_units': 100,
+  'n_latents': 100,
+  'n_test_epochs': 50000,
+  'n_train_epochs': 50000,
+  'test_batch_size': 3,
+  'test_latents_Adam_lr': 0.0001,
+  'test_latents_init': 'normal',
+  'train_batch_size': 32,
+  'train_latents_Adam_lr': 0.0001,
+  'train_latents_init': 'normal'}
+making Transformer Decoder
+/home/xiaoyam/anaconda3/lib/python3.7/site-packages/torch/nn/functional.py:1350: UserWarning: nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.
+  warnings.warn("nn.functional.sigmoid is deprecated. Use torch.sigmoid instead.")
+Epoch 1 - Average loss: 60.863607, Cumulative loss: 3773.543659, Average Unnormed loss: 60.863608, Best Loss: 60.863608, Best Loss at Epoch 1(6.08 s)
+Epoch 2 - Average loss: 57.895620, Cumulative loss: 3589.528439, Average Unnormed loss: 57.895620, Best Loss: 57.895620, Best Loss at Epoch 2(11.98 s)
+Epoch 3 - Average loss: 38.440964, Cumulative loss: 2383.339787, Average Unnormed loss: 38.440964, Best Loss: 38.440964, Best Loss at Epoch 3(17.89 s)
+Epoch 4 - Average loss: 5.645953, Cumulative loss: 350.049068, Average Unnormed loss: 5.645953, Best Loss: 5.645953, Best Loss at Epoch 4(23.82 s)
+Epoch 5 - Average loss: -22.969440, Cumulative loss: -1424.105282, Average Unnormed loss: -22.969440, Best Loss: -22.969440, Best Loss at Epoch 5(29.74 s)
+Epoch 6 - Average loss: -44.215664, Cumulative loss: -2741.371143, Average Unnormed loss: -44.215663, Best Loss: -44.215663, Best Loss at Epoch 6(35.70 s)
+Epoch 7 - Average loss: -59.485062, Cumulative loss: -3688.073826, Average Unnormed loss: -59.485062, Best Loss: -59.485062, Best Loss at Epoch 7(41.66 s)
+Epoch 8 - Average loss: -71.703837, Cumulative loss: -4445.637913, Average Unnormed loss: -71.703838, Best Loss: -71.703838, Best Loss at Epoch 8(47.65 s)
+Epoch 9 - Average loss: -81.425408, Cumulative loss: -5048.375290, Average Unnormed loss: -81.425407, Best Loss: -81.425407, Best Loss at Epoch 9(53.64 s)
+Epoch 10 - Average loss: -90.152214, Cumulative loss: -5589.437248, Average Unnormed loss: -90.152214, Best Loss: -90.152214, Best Loss at Epoch 10(59.63 s)
+Epoch 11 - Average loss: -97.286514, Cumulative loss: -6031.763885, Average Unnormed loss: -97.286515, Best Loss: -97.286515, Best Loss at Epoch 11(65.65 s)
+Epoch 12 - Average loss: -103.452243, Cumulative loss: -6414.039047, Average Unnormed loss: -103.452243, Best Loss: -103.452243, Best Loss at Epoch 12(71.66 s)
+Epoch 13 - Average loss: -108.779012, Cumulative loss: -6744.298729, Average Unnormed loss: -108.779012, Best Loss: -108.779012, Best Loss at Epoch 13(77.68 s)
+Epoch 14 - Average loss: -113.685104, Cumulative loss: -7048.476433, Average Unnormed loss: -113.685103, Best Loss: -113.685103, Best Loss at Epoch 14(83.70 s)
+Epoch 15 - Average loss: -117.904257, Cumulative loss: -7310.063934, Average Unnormed loss: -117.904257, Best Loss: -117.904257, Best Loss at Epoch 15(89.73 s)
+Epoch 16 - Average loss: -121.463502, Cumulative loss: -7530.737122, Average Unnormed loss: -121.463502, Best Loss: -121.463502, Best Loss at Epoch 16(95.76 s)
+Epoch 17 - Average loss: -125.469326, Cumulative loss: -7779.098183, Average Unnormed loss: -125.469326, Best Loss: -125.469326, Best Loss at Epoch 17(101.80 s)
+Epoch 18 - Average loss: -128.424169, Cumulative loss: -7962.298500, Average Unnormed loss: -128.424169, Best Loss: -128.424169, Best Loss at Epoch 18(107.84 s)
+Epoch 19 - Average loss: -131.605317, Cumulative loss: -8159.529633, Average Unnormed loss: -131.605316, Best Loss: -131.605316, Best Loss at Epoch 19(113.88 s)
+Epoch 20 - Average loss: -134.535578, Cumulative loss: -8341.205849, Average Unnormed loss: -134.535578, Best Loss: -134.535578, Best Loss at Epoch 20(119.93 s)
+Epoch 21 - Average loss: -137.571593, Cumulative loss: -8529.438759, Average Unnormed loss: -137.571593, Best Loss: -137.571593, Best Loss at Epoch 21(125.98 s)
+Epoch 22 - Average loss: -139.999252, Cumulative loss: -8679.953613, Average Unnormed loss: -139.999251, Best Loss: -139.999251, Best Loss at Epoch 22(132.04 s)
+Epoch 23 - Average loss: -142.480354, Cumulative loss: -8833.781937, Average Unnormed loss: -142.480354, Best Loss: -142.480354, Best Loss at Epoch 23(138.10 s)
+slurmstepd: error: *** JOB 13708 ON compute-0-29 CANCELLED AT 2019-08-20T05:10:07 ***

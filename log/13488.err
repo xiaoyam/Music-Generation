@@ -1,0 +1,2 @@
+cmdTrace.c(713):ERROR:104: 'python3' is an unrecognized subcommand
+cmdModule.c(411):ERROR:104: 'python3' is an unrecognized subcommand
