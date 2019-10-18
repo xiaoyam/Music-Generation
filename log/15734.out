@@ -1,0 +1,50 @@
+data/drum/drum fname_start is here !!!
+shapes lol (2005, 174, 128) (18, 174, 130) (18, 174, 128) (18, 174, 130)
+torch.Size([2005, 174, 128]) torch.Size([2005, 174, 130])
+torch.Size([18, 174, 128]) torch.Size([18, 174, 130])
+mean latent torch.Size([64])
+mean latent torch.Size([64])
+mean latent torch.Size([64])
+mean latent torch.Size([64])
+mean latent torch.Size([64])
+All Done!!!
+data/drum/drum fname_start is here !!!
+shapes lol (2005, 174, 128) (18, 174, 130) (18, 174, 128) (18, 174, 130)
+torch.Size([2005, 174, 128]) torch.Size([2005, 174, 130])
+torch.Size([18, 174, 128]) torch.Size([18, 174, 130])
+mean latent torch.Size([128])
+mean latent torch.Size([128])
+mean latent torch.Size([128])
+mean latent torch.Size([128])
+mean latent torch.Size([128])
+All Done!!!
+data/drum/drum fname_start is here !!!
+shapes lol (2005, 174, 128) (18, 174, 130) (18, 174, 128) (18, 174, 130)
+torch.Size([2005, 174, 128]) torch.Size([2005, 174, 130])
+torch.Size([18, 174, 128]) torch.Size([18, 174, 130])
+mean latent torch.Size([128])
+mean latent torch.Size([128])
+mean latent torch.Size([128])
+mean latent torch.Size([128])
+mean latent torch.Size([128])
+All Done!!!
+data/drum/drum fname_start is here !!!
+shapes lol (2005, 174, 128) (18, 174, 130) (18, 174, 128) (18, 174, 130)
+torch.Size([2005, 174, 128]) torch.Size([2005, 174, 130])
+torch.Size([18, 174, 128]) torch.Size([18, 174, 130])
+mean latent torch.Size([128])
+mean latent torch.Size([128])
+mean latent torch.Size([128])
+mean latent torch.Size([128])
+mean latent torch.Size([128])
+All Done!!!
+data/drum/drum fname_start is here !!!
+shapes lol (2005, 174, 128) (18, 174, 130) (18, 174, 128) (18, 174, 130)
+torch.Size([2005, 174, 128]) torch.Size([2005, 174, 130])
+torch.Size([18, 174, 128]) torch.Size([18, 174, 130])
+mean latent torch.Size([256])
+mean latent torch.Size([256])
+mean latent torch.Size([256])
+mean latent torch.Size([256])
+mean latent torch.Size([256])
+All Done!!!
