@@ -432,8 +432,8 @@ def parse_arguments():
     #        help='Batch size')
     #parser.add_argument('--test_batch_size', type=int,
     #        help='Batch size during testing (overrides batch_size during test)')
-    parser.add_argument('--n_train_epochs', type=int, default=20000)
-    parser.add_argument('--n_test_epochs', type=int, default=20000)
+    parser.add_argument('--n_train_epochs', type=int, default=5000)
+    parser.add_argument('--n_test_epochs', type=int, default=5000)
 
     args = parser.parse_args()
     return vars(args)
@@ -479,7 +479,7 @@ def main():
 
 
     # save statistics
-    basedir = os.getcwd()
+    basedir = "/projects/dataset_processed/xiaoyam"
     #basedir = os.path.dirname(os.path.dirname(os.path.realpath(__file__)))
     model_folder = os.path.join(basedir, 'model_saves', 'pytorch',
             args['config_folder'], 'config_' + str(args['config_num']))
